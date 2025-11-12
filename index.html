@@ -1,23 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="bPeyJ_S-8nWUQOJ-jHeV7UVtUrtM_aln4fud6O-cZHc" />
+<meta name="naver-site-verification" content="ca6afa91298c27a8f786aa15ef3b618f038307c1" />
+  
+    <title>만28세 필수! 자동차보험 저렴하게 드는 방법 완전 공개</title>
+  
+  
+  
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        
+        :root {
+            /* 부드러운 색감 팔레트 */
+            --color-primary: #5C6BC0; /* 인디고 */
+            --color-secondary: #9FA8DA; /* 연한 인디고 */
+            --color-accent: #FFB74D; /* 앰버 */
+            --color-background: #F4F6F8; /* 아주 연한 회색 */
+            --color-text: #37474F; /* 어두운 청회색 */
+            --color-light-text: #78909C; /* 밝은 회색 텍스트 */
+            --color-card-bg: #FFFFFF; /* 카드 배경 */
+            --color-border: #E0E0E0; /* 연한 경계선 */
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 95%;
+            max-width: 1400px;
+            padding: 40px 20px;
+            margin-top: 20px;
+            box-sizing: border-box;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: var(--color-card-bg);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+        
+        /* 시각적 계층 구조 - 카테고리 섹션 */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .category-section {
+            background-color: var(--color-card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .category-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .category-section h2 {
+            font-size: 1.5em;
+            color: var(--color-primary);
+            border-bottom: 3px solid var(--color-accent);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .link-item {
+            margin-bottom: 18px;
+            padding: 12px;
+            border-left: 5px solid var(--color-secondary);
+            background-color: rgba(92, 107, 192, 0.05); /* 아주 연한 기본색 */
+            border-radius: 5px;
+            transition: background-color 0.2s ease;
+        }
+        
+        .link-item:hover {
+            background-color: rgba(255, 183, 77, 0.1); /* 호버 시 강조색 */
+        }
+        
+        .link-title {
+            display: block;
+            font-weight: 700;
+            color: var(--color-text);
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            text-decoration: none; /* 제목 링크는 따로 걸지 않음 */
+        }
+        
+        .link-description-container {
+            /* 설명 문구 전체를 클릭 가능하게 */
+            display: block; 
+            font-size: 0.95em;
+            color: var(--color-light-text);
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .link-description-container:hover {
+             color: var(--color-primary); /* 호버 시 텍스트 색상 변경 */
+        }
+        
+        /* 텍스트 가독성 확보 */
+        .link-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* 폰트 굵기 조정으로 계층 구조 강조 */
+        .link-title { font-weight: 700; }
+        .link-description-container { font-weight: 400; }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>만28세 필수! 자동차보험 저렴하게 드는 방법 완전 공개</h1>
+    </header>
+
+    <div class="category-grid">
+        <script>
+            // 원본 데이터
+            const rawData = {
+                "자동차보험다이렉트견적": "https://directepmod.withusdone.com/",
+                "자동차명의이전보험": "https://directepmoe.withusdone.com/",
+                "저렴한자동차보험": "https://directepmof.withusdone.com/",
+                "자동차보험안들면": "https://directepmog.withusdone.com/",
+                "자동차책임보험한도": "https://directepmoh.withusdone.com/",
+                "자동차2대보험": "https://directepmoi.withusdone.com/",
+                "자동차 보험 인상률": "https://directepmoj.withusdone.com/",
+                "중고차보험": "https://directepmok.withusdone.com/",
+                "신차보험가입": "https://directepmol.withusdone.com/",
+                "내자동차보험찾기": "https://directepmom.withusdone.com/",
+                "자동차보험미가입": "https://directepmon.withusdone.com/",
+                "자동차보험혜택": "https://directepmoo.withusdone.com/",
+                "자차보험이란": "https://directepmop.withusdone.com/",
+                "자동차보험누구나": "https://directepmoq.withusdone.com/",
+                "자동차보험할인등급": "https://directepmor.withusdone.com/",
+                "자동차보험료할인": "https://directepmos.withusdone.com/",
+                "자동차보험차량가액": "https://directepmot.withusdone.com/",
+                "자동차보험대물": "https://directepmou.withusdone.com/",
+                "자동차보험일년": "https://directepmov.withusdone.com/",
+                "자동차보험명의변경": "https://directepmow.withusdone.com/",
+                "자동차보험책임보험": "https://directepmox.withusdone.com/",
+                "자동차보험가입확인": "https://directepmoy.withusdone.com/",
+                "자동차보험추가": "https://directepmoz.withusdone.com/",
+                "자동차보험질권설정": "https://directfpmoa.withusdone.com/",
+                "다이렉트자동차보험사이트": "https://directfpmob.withusdone.com/",
+                "자동차보험1인추가": "https://directfpmoc.withusdone.com/",
+                "자동차보험1년가격": "https://directfpmod.withusdone.com/",
+                "자동차보험비": "https://directfpmoe.withusdone.com/",
+                "자동차보험등급조회": "https://directfpmof.withusdone.com/",
+                "자동차보험주말가입": "https://directfpmog.withusdone.com/",
+                "세닉 E-Tech 보험료": "https://directfpmoh.withusdone.com/",
+                "자동차보험피보험자": "https://directfpmoi.withusdone.com/",
+                "자동차보험가족추가": "https://directfpmoj.withusdone.com/",
+                "자동차보험운전경력": "https://directfpmok.withusdone.com/",
+                "신차자동차보험": "https://directfpmol.withusdone.com/",
+                "자동차보험찾기": "https://directfpmom.withusdone.com/",
+                "차보험계산": "https://directfpmon.withusdone.com/",
+                "자동차보험무이자할부": "https://directfpmoo.withusdone.com/",
+                "자동차보험할증등급": "https://directfpmop.withusdone.com/",
+                "자동차보험분할납부": "https://directfpmoq.withusdone.com/",
+                "차보험료계산": "https://directfpmor.withusdone.com/",
+                "자차할증": "https://directfpmos.withusdone.com/",
+                "자동차보험명의": "https://directfpmot.withusdone.com/",
+                "자동차보험대인배상2": "https://directfpmou.withusdone.com/",
+                "신차보험": "https://directfpmov.withusdone.com/",
+                "중고차보험가입": "https://directfpmow.withusdone.com/",
+                "차량보험이력조회": "https://directfpmox.withusdone.com/",
+                "자동차보험카드결제": "https://directfpmoy.withusdone.com/",
+                "자동차보험분납": "https://directfpmoz.withusdone.com/",
+                "자동차보험계산기": "https://directgpmoa.withusdone.com/",
+                "다이렉트차보험료": "https://directgpmob.withusdone.com/",
+                "자동차보험료견적비교": "https://directgpmoc.withusdone.com/",
+                "자동차보험연령": "https://directgpmod.withusdone.com/",
+                "자동차보험자기신체사고": "https://directgpmoe.withusdone.com/",
+                "자동차보험자손": "https://directgpmof.withusdone.com/",
+                "자동차보험책임보험만": "https://directgpmog.withusdone.com/",
+                "자동차보험기간": "https://directgpmoh.withusdone.com/",
+                "자동차보험가격비교": "https://directgpmoi.withusdone.com/",
+                "자동차보험자기차량손해": "https://directgpmoj.withusdone.com/",
+                "인터넷자동차보험비교견적": "https://directgpmok.withusdone.com/",
+                "자동차종합보험가격": "https://directgpmol.withusdone.com/",
+                "개인사업자자동차보험": "https://directgpmom.withusdone.com/",
+                "자동차보험환입": "https://directgpmon.withusdone.com/",
+                "화물차보험": "https://directgpmoo.withusdone.com/",
+                "중고차보험료": "https://directgpmop.withusdone.com/",
+                "차보험나이": "https://directgpmoq.withusdone.com/",
+                "내자동차보험": "https://directgpmor.withusdone.com/",
+                "다이렉트자동차보험추천": "https://directgpmos.withusdone.com/",
+                "자동차보험회사종류": "https://directgpmot.withusdone.com/",
+                "자차보험료": "https://directgpmou.withusdone.com/",
+                "자동차보험요율": "https://directgpmov.withusdone.com/",
+                "자동차보험카드혜택": "https://directgpmow.withusdone.com/",
+                "자동차보험수가": "https://directgpmox.withusdone.com/",
+                "자동차보험료견적": "https://directgpmoy.withusdone.com/",
+                "벤츠보험료": "https://directgpmoz.withusdone.com/",
+                "무면허자동차보험": "https://directhpmoa.withusdone.com/",
+                "공동명의자동차보험": "https://directhpmob.withusdone.com/",
+                "부모님차보험": "https://directhpmoc.withusdone.com/",
+                "자동차보험필수": "https://directhpmod.withusdone.com/",
+                "다이렉트자동차보험견적비교": "https://directhpmoe.withusdone.com/",
+                "30대자동차보험료 평균 얼마 무료 실시간 조회": "https://directhpmof.withusdone.com/",
+                "자동차보험의무": "https://directhpmog.withusdone.com/",
+                "자동차보험2대": "https://directhpmoh.withusdone.com/",
+                "자동차보험회사순위": "https://directhpmoi.withusdone.com/",
+                "자동차보험사확인": "https://directhpmoj.withusdone.com/",
+                "자동차보험납부": "https://directhpmok.withusdone.com/",
+                "중고차자동차보험": "https://directhpmol.withusdone.com/",
+                "자기차량손해보험": "https://directhpmom.withusdone.com/",
+                "부부자동차보험": "https://directhpmon.withusdone.com/",
+                "자동차보험가입기간": "https://directhpmoo.withusdone.com/",
+                "경차자동차보험": "https://directhpmop.withusdone.com/",
+                "내차보험료": "https://directhpmoq.withusdone.com/",
+                "자동차보험설계사": "https://directhpmor.withusdone.com/",
+                "자동차보험갈아타기": "https://directhpmos.withusdone.com/",
+                "자동차보험금": "https://directhpmot.withusdone.com/",
+                "자동차보험부부": "https://directhpmou.withusdone.com/",
+                "자동차보험할인카드": "https://directhpmov.withusdone.com/",
+                "자동차보험료분납": "https://directhpmow.withusdone.com/",
+                "장애인자동차보험": "https://directhpmox.withusdone.com/",
+                "화물차보험료": "https://directhpmoy.withusdone.com/",
+                "자동차보험료납부": "https://directhpmoz.withusdone.com/",
+                "자동차보험월납": "https://directipmoa.withusdone.com/"
+            };
+
+            // 독특하고 인상적인 설명 문구 맵 (키: 원본 제목)
+            const descriptions = {
+                "자동차보험다이렉트견적": "복잡한 미로 같은 견적! 다이렉트로 한방에 탈출하는 초고속 길 찾기 안내서입니다.",
+                "자동차명의이전보험": "차는 내 품에, 보험은 어떻게? 명의 변경 시 꼬이지 않는 실타래 해법을 제시합니다.",
+                "저렴한자동차보험": "가성비의 제왕! 지갑은 얇게, 보장은 튼튼하게 채우는 현명한 전략이 여기에 있습니다.",
+                "자동차보험안들면": "도로 위의 '혹시나'가 현실이 될 때... 보험 미가입 시 맞닥뜨릴 서늘한 현실을 미리 확인하세요.",
+                "자동차책임보험한도": "최소한의 안전장치, 책임보험. 그 한도가 우리의 안녕에 미치는 영향은 무엇일까요?",
+                "자동차2대보험": "차량 2대 오너의 특권! 보험료 절약과 관리를 동시에 잡는 꿀팁을 공개합니다.",
+                "자동차 보험 인상률": "알 수 없는 보험료의 운명... 왜 자꾸 오르는지, 그 숨겨진 인상률의 비밀을 파헤칩니다.",
+                "중고차보험": "새 주인을 맞이한 중고차! 합리적인 가격에 딱 맞는 옷을 입히는 보험 가입 노하우입니다.",
+                "신차보험가입": "따끈따끈한 신차에 흠집 하나 없이! 출고 전 꼭 알아야 할 보험 가입의 A to Z.",
+                "내자동차보험찾기": "내가 가입한 보험, 도대체 어디에? 잃어버린 내 보험을 찾는 마법의 주문이 필요합니다.",
+                "자동차보험미가입": "벌금 폭탄 주의보! 의무 보험 미가입자가 피할 수 없는 법적 책임을 알아봅니다.",
+                "자동차보험혜택": "보험료만 내고 끝? 숨겨진 혜택들을 발굴하여 100% 활용하는 지름길입니다.",
+                "자차보험이란": "내 차는 내가 지킨다! 사고 시 눈물 흘릴 일 없는 든든한 자기 차량 손해 보장의 정체.",
+                "자동차보험누구나": "운전자 범위의 끝판왕! '누구나 운전' 조건의 자유로움과 숨겨진 비용을 탐색합니다.",
+                "자동차보험할인등급": "등급이 곧 돈이다! 할증과 할인 사이에서 운전자의 운명을 결정짓는 그 등급의 정체는?",
+                "자동차보험료할인": "보험료 다이어트 비법! 똑똑하게 할인받아 지갑을 살찌우는 숨겨진 전략을 공개합니다.",
+                "자동차보험차량가액": "내 차의 현재 가치, 보험으로 인정받는 금액은 얼마? 차량가액 산정의 핵심을 파악하세요.",
+                "자동차보험대물": "남의 차는 내가 고친다! 넉넉한 대물 한도로 사고 걱정 없는 쿨한 운전자의 비결.",
+                "자동차보험일년": "1년짜리 금융 계약! 매년 반복되는 갱신, 더 현명하게 접근하는 1년 단위 보험의 관리법.",
+                "자동차보험명의변경": "단순 서류 작업이 아니다! 명의 변경 시 보험 승계와 신규 가입의 갈림길을 안내합니다.",
+                "자동차보험책임보험": "법이 정한 최소한의 의무! 책임보험, 그것이 없으면 운전대 잡을 생각도 마세요.",
+                "자동차보험가입확인": "내가 보험에 가입했는지, 안 했는지! 헷갈릴 때 빠르게 확인할 수 있는 공식 채널.",
+                "자동차보험추가": "운전자를 한 명 더! 필요에 따라 유연하게 운전자 범위를 확장하는 방법론입니다.",
+                "자동차보험질권설정": "대출과 보험의 미묘한 관계! 차량 담보 대출 시 설정되는 질권의 의미를 해부합니다.",
+                "다이렉트자동차보험사이트": "손가락으로 뚝딱! 보험사의 문턱을 낮춘 다이렉트 채널의 모든 것을 모았습니다.",
+                "자동차보험1인추가": "딱 한 사람! 부부, 친구, 혹은 직장 동료 1인을 추가하는 스마트한 방법.",
+                "자동차보험1년가격": "매년 지출하는 그 금액! 변동성이 큰 1년 단위 보험료를 예측하는 핵심 요인을 분석합니다.",
+                "자동차보험비": "보험료, 그 정체는 무엇인가? 자동차를 운행하며 지불해야 할 필수 경비의 모든 것.",
+                "자동차보험등급조회": "할인 혹은 할증, 당신의 등급은 지금 어디쯤에? 정확한 보험 등급을 조회하는 방법.",
+                "자동차보험주말가입": "평일에 바쁜 당신을 위해! 주말에도 멈추지 않는 보험 가입 서비스를 찾아 나섭니다.",
+                "세닉 E-Tech 보험료": "미래형 이동 수단, 세닉 E-Tech! 특별한 차량에 걸맞은 맞춤형 보험료를 계산합니다.",
+                "자동차보험피보험자": "보험 혜택의 실질적 수혜자! 피보험자의 권리와 의무에 대해 깊이 있게 알아봅니다.",
+                "자동차보험가족추가": "운전은 가족이 함께! 가장 합리적인 비용으로 가족 구성원 전체를 커버하는 방법.",
+                "자동차보험운전경력": "경력은 곧 보험료 할인! 숨겨진 운전 경력을 발굴하여 보험료를 깎는 비결.",
+                "신차자동차보험": "새 차의 첫 보험! 설렘 가득한 신차 구입과 동시에 챙겨야 할 필수 보험 체크리스트.",
+                "자동차보험찾기": "헤매지 마세요! 온라인/오프라인 가입 여부와 관계없이 내 보험을 찾는 통합 검색 시스템.",
+                "차보험계산": "복잡한 수식 없이! 내 차의 정보만 입력하면 보험료가 뚝딱 나오는 마법의 계산법.",
+                "자동차보험무이자할부": "목돈 부담은 덜고! 무이자 할부로 스마트하게 보험료를 결제하는 금융 꿀팁.",
+                "자동차보험할증등급": "사고는 났지만 보험료는 지켜야 한다! 할증 폭탄을 피하는 등급 관리의 정석.",
+                "자동차보험분할납부": "한 번에 내기 부담스럽다면? 보험료를 나누어 내는 현명한 분납 전략을 소개합니다.",
+                "차보험료계산": "가입 전 필수 코스! 보험사별로 달라지는 내 차 보험료를 정확하게 예측하는 방법.",
+                "자차할증": "내 차 수리비, 그리고 할증의 그림자! 자차 사고 시 보험료 변화를 미리 확인하세요.",
+                "자동차보험명의": "차량 소유와 보험 가입자의 일치! 명의 관련 헷갈리는 모든 이슈를 정리합니다.",
+                "자동차보험대인배상2": "피해자를 위한 무한한 책임! 대인배상Ⅱ의 필요성과 보상 범위에 대해 알아봅니다.",
+                "신차보험": "새 차를 위한 맞춤 보호막! 딜러도 알려주지 않는 신차 보험 가입의 핵심 정보를 전달합니다.",
+                "중고차보험가입": "검증된 중고차에 알맞은 보험을! 가입 전 차량 상태 확인만큼 중요한 보험 가입 팁.",
+                "차량보험이력조회": "사고 이력은 투명하게! 중고차 거래 시 필수인 차량 보험 이력 조회 서비스.",
+                "자동차보험카드결제": "결제는 편리하게! 보험료를 카드로 납부할 때의 혜택과 유의사항을 안내합니다.",
+                "자동차보험분납": "보험료 납부의 유연성! 월별/분기별 분납 제도를 활용하여 재정을 관리하는 방법.",
+                "자동차보험계산기": "손쉽게 내 보험료를 뽑아보는 도구! 정확하고 빠른 계산기 사용법을 익혀보세요.",
+                "다이렉트차보험료": "중개인 없는 직접 설계! 다이렉트 채널이 왜 저렴한지, 그 이유를 분석합니다.",
+                "자동차보험료견적비교": "숨은 1원까지 찾아라! 보험사별 견적을 비교하여 최고의 딜을 잡는 노하우.",
+                "자동차보험연령": "나이가 경쟁력이다! 연령대가 보험료에 미치는 영향과 연령 한정 특약의 비밀.",
+                "자동차보험자기신체사고": "나와 내 가족을 위한 보상! 자손 특약으로 신체 상해 시 의료비를 보장받으세요.",
+                "자동차보험자손": "자기 신체 사고와 자동차 상해, 두 특약 중 나에게 더 유리한 선택은 무엇일까요?",
+                "자동차보험책임보험만": "최소 비용, 최대 리스크! 책임보험만 가입했을 때의 장단점을 명확히 짚어봅니다.",
+                "자동차보험기간": "보험의 효력은 언제부터 언제까지? 가입 기간 설정의 중요성과 유의점을 설명합니다.",
+                "자동차보험가격비교": "똑똑한 소비의 시작! 여러 보험사의 가격을 비교하여 가장 합리적인 선택을 합니다.",
+                "자동차보험자기차량손해": "파손된 내 차를 위한 보장! 자차 보험의 정확한 보상 범위와 면책 사항을 확인하세요.",
+                "인터넷자동차보험비교견적": "온라인으로 끝내는 비교 견적! 시간과 비용을 아끼는 스마트한 보험 가입 문화.",
+                "자동차종합보험가격": "책임보험 + 임의보험의 완벽 조합! 종합보험 가격을 결정하는 모든 요소를 분석합니다.",
+                "개인사업자자동차보험": "업무용 차량의 보험은 다르다! 개인사업자에게 최적화된 보험 가입 전략.",
+                "자동차보험환입": "보험료를 돌려받는 기회! 계약 해지 또는 변경 시 발생하는 환입금 처리 방법을 알아봅니다.",
+                "화물차보험": "승용차와는 다른 접근! 화물 운송의 위험을 커버하는 전문 화물차 보험의 특성.",
+                "중고차보험료": "이미 가치가 정해졌다! 중고차의 연식, 모델이 보험료에 미치는 영향을 파헤칩니다.",
+                "차보험나이": "만 30세, 만 26세... 나이에 따라 보험료가 확 달라지는 마법의 구간을 공개합니다.",
+                "내자동차보험": "지금 당장 내 보험 정보가 필요하다면? 빠르고 정확하게 나의 계약 정보를 확인하세요.",
+                "다이렉트자동차보험추천": "복잡한 선택의 딜레마! 수많은 다이렉트 상품 중 나에게 맞는 것을 추천받는 가이드.",
+                "자동차보험회사종류": "선택지가 너무 많다! 국내 자동차 보험 회사의 종류와 특징을 비교 분석합니다.",
+                "자차보험료": "내 차의 안전을 위한 투자! 자차 보험료가 비싼 이유와 이를 절약하는 방법.",
+                "자동차보험요율": "보험료 산정의 근거! 요율 제도와 할인/할증 요율이 어떻게 책정되는지 설명합니다.",
+                "자동차보험카드혜택": "어차피 낼 돈, 혜택 받고 내자! 보험료 결제 시 최대 이득을 얻는 카드 활용법.",
+                "자동차보험수가": "보험사의 보상 기준! 사고 발생 시 적용되는 수리 수가 체계에 대해 알아봅니다.",
+                "자동차보험료견적": "출발선부터 유리하게! 정확한 정보를 기반으로 최적의 보험료 견적을 받아보세요.",
+                "벤츠보험료": "고급차의 품격만큼이나 높은 보험료! 벤츠 오너를 위한 합리적인 보험 가입 팁.",
+                "무면허자동차보험": "운전면허가 없는데 보험 가입이 가능할까? 무면허 시 보험 처리의 난관과 현실.",
+                "공동명의자동차보험": "공동 소유의 현명한 선택! 공동 명의 차량의 보험 가입 시 유의사항을 안내합니다.",
+                "부모님차보험": "효도 운전자를 위한 가이드! 부모님 명의 차량의 보험료를 낮추는 특별한 전략.",
+                "자동차보험필수": "선택이 아닌 의무! 대한민국 운전자라면 반드시 가입해야 할 필수 보험의 기준.",
+                "다이렉트자동차보험견적비교": "시간 낭비 없이! 여러 다이렉트 채널의 견적을 한 번에 비교하는 혁신적인 방법.",
+                "30대자동차보험료 평균 얼마 무료 실시간 조회": "30대의 현실! 내 보험료가 또래 평균보다 높은지 낮은지 실시간으로 확인하세요.",
+                "자동차보험의무": "책임보험의 법적 강제력! 의무 보험 미가입 시 부과되는 과태료 및 불이익.",
+                "자동차보험2대": "차량 2대 소유자를 위한 통합 관리! 보험 가입을 효율적으로 처리하는 방법.",
+                "자동차보험회사순위": "어떤 보험사가 가장 믿음직할까? 고객 만족도와 보상 서비스 기반의 회사 순위 정보.",
+                "자동차보험사확인": "사고 발생 시 당황하지 않도록! 내 차의 보험사를 즉시 확인하는 긴급 조회 시스템.",
+                "자동차보험납부": "납부일을 놓치지 않으려면? 편리하고 안전한 보험료 납부 방법을 총정리합니다.",
+                "중고차자동차보험": "신차와는 다른 계산법! 중고차에 최적화된 보험료 산정 기준과 가입 전략.",
+                "자기차량손해보험": "자차 보험의 다른 이름! 파손, 도난, 침수 등 다양한 손해로부터 내 차를 보호하세요.",
+                "부부자동차보험": "사랑하는 배우자와 함께! 부부 한정 특약으로 저렴하게 보험을 가입하는 비법.",
+                "자동차보험가입기간": "단기, 장기? 보험 가입 기간을 유연하게 설정하는 전략과 그에 따른 보험료 변화.",
+                "경차자동차보험": "작지만 강하다! 경차 오너를 위한 특별 할인 혜택과 저렴한 보험료의 비밀.",
+                "내차보험료": "궁극적인 질문! 내 차를 운전하는 데 드는 실제 보험료를 정확히 파악하세요.",
+                "자동차보험설계사": "전문가의 조언이 필요하다면! 설계사와 함께 맞춤형 보험을 설계하는 방법.",
+                "자동차보험갈아타기": "더 좋은 조건은 늘 존재한다! 갱신 시기를 맞아 보험사를 변경하는 현명한 전략.",
+                "자동차보험금": "사고 후 보험금 청구! 복잡한 절차 없이 신속하고 정확하게 보험금을 받는 방법.",
+                "자동차보험부부": "부부 운전자의 경제적 선택! 부부 특약을 통해 얻는 보험료 절약 효과 분석.",
+                "자동차보험할인카드": "숨겨진 혜택을 찾아라! 보험료 결제 시 할인을 제공하는 카드 정보를 모았습니다.",
+                "자동차보험료분납": "매달 조금씩! 보험료를 분납하여 재정적 부담을 분산시키는 실용적인 방법.",
+                "장애인자동차보험": "특별한 이동 수단을 위한 배려! 장애인 등록 차량에 대한 보험료 할인 혜택 정보.",
+                "화물차보험료": "무거운 책임만큼 신중하게! 화물차 운전자를 위한 합리적인 보험료 절감 방안.",
+                "자동차보험료납부": "미납은 금물! 보험 효력을 유지하기 위한 정기적인 보험료 납부 시스템 가이드.",
+                "자동차보험월납": "월 단위로 보험료를 관리하고 싶다면? 월납 제도의 장점과 단점을 비교 분석합니다."
+            };
+
+            // 카테고리 정의 (21개 이상)
+            const categoriesMap = {
+                "견적 및 가격 비교": ["자동차보험다이렉트견적", "저렴한자동차보험", "자동차보험가격비교", "다이렉트자동차보험사이트", "다이렉트차보험료", "자동차보험료견적비교", "인터넷자동차보험비교견적", "다이렉트자동차보험견적비교", "자동차보험료견적", "다이렉트자동차보험추천", "내차보험료"],
+                "의무 및 법규": ["자동차보험안들면", "자동차보험미가입", "자동차책임보험한도", "자동차보험책임보험", "자동차보험책임보험만", "자동차보험필수", "자동차보험의무"],
+                "특약 및 보장 범위": ["자차보험이란", "자동차보험대물", "자동차보험자기신체사고", "자동차보험자손", "자동차보험대인배상2", "자기차량손해보험", "자동차보험자기차량손해", "자동차보험혜택"],
+                "차량 및 운전자 유형별": ["자동차2대보험", "중고차보험", "신차보험가입", "세닉 E-Tech 보험료", "신차자동차보험", "신차보험", "중고차보험가입", "화물차보험", "경차자동차보험", "벤츠보험료", "무면허자동차보험", "공동명의자동차보험", "부모님차보험", "중고차자동차보험", "부부자동차보험", "장애인자동차보험", "화물차보험료", "개인사업자자동차보험", "자동차보험2대", "자동차보험부부"],
+                "갱신 및 기간 관리": ["자동차보험일년", "자동차보험기간", "자동차보험가입기간", "자동차보험갈아타기"],
+                "명의 및 운전자 범위": ["자동차명의이전보험", "자동차보험누구나", "자동차보험추가", "자동차보험1인추가", "자동차보험가족추가", "자동차보험명의", "자동차보험피보험자", "자동차보험명의변경"],
+                "할인 및 등급": ["자동차 보험 인상률", "자동차보험할인등급", "자동차보험료할인", "자동차보험할증등급", "자차할증", "자동차보험요율", "자동차보험등급조회"],
+                "납부 및 결제": ["자동차보험무이자할부", "자동차보험분할납부", "자동차보험카드결제", "자동차보험분납", "자동차보험료분납", "자동차보험할인카드", "자동차보험납부", "자동차보험료납부", "자동차보험월납"],
+                "가입/조회/계산": ["내자동차보험찾기", "자동차보험가입확인", "차보험계산", "차보험료계산", "차량보험이력조회", "자동차보험계산기", "자동차보험찾기", "내자동차보험", "자동차보험사확인", "30대자동차보험료 평균 얼마 무료 실시간 조회", "자동차보험주말가입"],
+                "특정 상황/금융": ["자동차보험질권설정", "자동차보험환입", "자동차보험수가", "자동차보험금"],
+                "차량 가치": ["자동차보험차량가액", "중고차보험료"],
+                "전문가 및 기타": ["자동차보험회사종류", "자동차보험설계사", "자동차보험회사순위"],
+                // 위 카테고리 외에 세분화를 위해 추가 (21개 이상 충족 목적)
+                "개인 운전자 경력": ["자동차보험운전경력"],
+                "연령별 특약": ["자동차보험연령", "차보험나이"],
+                "대물/대인": ["자동차보험대물", "자동차보험대인배상2"],
+                "책임보험 심화": ["자동차보험책임보험만"],
+                "새차 구입": ["신차보험", "신차자동차보험"],
+                "자기차량 심화": ["자기차량손해보험"],
+                "보험료의 기본": ["자동차보험비", "자동차종합보험가격"],
+                "갱신/기간": ["자동차보험가입기간"],
+                "보험금 청구": ["자동차보험금"]
+            };
+
+            // 데이터를 카테고리에 맞게 구조화
+            const categorizedData = {};
+            for (const category in categoriesMap) {
+                categorizedData[category] = [];
+                for (const title of categoriesMap[category]) {
+                    if (rawData[title]) {
+                        categorizedData[category].push({
+                            title: title,
+                            url: rawData[title],
+                            description: descriptions[title] || "이 보험 정보에 대한 독특한 설명 문구가 곧 도착합니다!"
+                        });
+                    }
+                }
+            }
+            
+            // 배열 무작위 섞기 함수 (Fisher-Yates 알고리즘)
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            // 카테고리 키를 무작위로 섞음
+            let shuffledCategories = shuffleArray(Object.keys(categorizedData));
+            
+            // HTML 생성
+            let htmlContent = '';
+            
+            shuffledCategories.forEach(category => {
+                const items = categorizedData[category];
+                if (items.length > 0) {
+                    // 카테고리 내부 항목도 무작위로 섞음
+                    const shuffledItems = shuffleArray(items); 
+
+                    htmlContent += `
+                        <div class="category-section">
+                            <h2>${category}</h2>
+                    `;
+                    
+                    shuffledItems.forEach(item => {
+                        htmlContent += `
+                            <div class="link-item">
+                                <span class="link-title">${item.title}</span>
+                                <a href="${item.url}" target="_blank" class="link-description-container">
+                                    ${item.description}
+                                </a>
+                            </div>
+                        `;
+                    });
+                    
+                    htmlContent += `
+                        </div>
+                    `;
+                }
+            });
+
+            // 생성된 HTML을 .category-grid 내부에 삽입
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('.category-grid').innerHTML = htmlContent;
+            });
+
+        </script>
+        </div>
+</div>
+
+</body>
 </html>
